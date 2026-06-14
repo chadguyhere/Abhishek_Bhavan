@@ -1,458 +1,351 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Abhishek Bhavan | Banquet Hall & Event Venue</title>
-
-<meta name="description"
-content="Abhishek Bhavan is a banquet hall and event venue in Pritinagar offering hall rentals for weddings, receptions, birthdays and special occasions.">
-
-<meta name="keywords"
-content="Abhishek Bhavan, banquet hall, wedding hall, event venue, party hall, reception hall, Pritinagar">
-
-<meta name="author" content="Abhishek Bhavan">
-
-<meta property="og:title"
-content="Abhishek Bhavan | Banquet Hall & Event Venue">
-
-<meta property="og:description"
-content="Book Abhishek Bhavan for weddings, birthdays, receptions and special events.">
-
-<meta property="og:type" content="website">
-
-<meta property="og:url"
-content="https://chadguyhere.github.io/Abhishek_Bhavan/">
-
-<meta property="og:image"
-content="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=1600&q=80">
-
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
-}
-
-html{
-    scroll-behavior:smooth;
-}
-
-body{
-    line-height:1.6;
-    color:#333;
-    background:#f8f8f8;
-    overflow-x:hidden;
-}
-
-header{
-    background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
-    url('https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=1600&q=80');
-    background-size:cover;
-    background-position:center;
-    height:90vh;
-    color:white;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
-    padding:20px;
-}
-
-.hero{
-    max-width:800px;
-}
-
-.hero h1{
-    font-size:3rem;
-    margin-bottom:15px;
-}
-
-.hero p{
-    font-size:1.2rem;
-    margin-bottom:30px;
-}
-
-.btn{
-    display:inline-block;
-    padding:14px 28px;
-    margin:8px;
-    border-radius:5px;
-    text-decoration:none;
-    font-weight:bold;
-    transition:.3s;
-}
-
-.call-btn{
-    background:#d4af37;
-    color:#000;
-}
-
-.whatsapp-btn{
-    background:#25D366;
-    color:white;
-}
-
-.btn:hover,
-.float-btn:hover,
-.contact-form button:hover{
-    opacity:.9;
-    transform:translateY(-2px);
-}
-
-section{
-    padding:70px 10%;
-}
-
-.section-title{
-    text-align:center;
-    margin-bottom:40px;
-    font-size:2rem;
-}
-
-.about{
-    background:white;
-}
-
-.services{
-    background:#f3f3f3;
-}
-
-.service-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:25px;
-}
-
-.card{
-    background:white;
-    padding:25px;
-    border-radius:10px;
-    box-shadow:0 2px 10px rgba(0,0,0,.08);
-    transition:.3s;
-}
-
-.card:hover{
-    transform:translateY(-5px);
-}
-
-.card h3{
-    margin-bottom:10px;
-}
-
-.features ul{
-    max-width:700px;
-    margin:auto;
-}
-
-.features li{
-    margin:12px 0;
-}
-
-.contact{
-    background:white;
-}
-
-.contact-box{
-    max-width:700px;
-    margin:auto;
-    text-align:center;
-}
-
-.contact-info{
-    margin:20px 0;
-    font-size:1.1rem;
-}
-
-.contact-form{
-    margin-top:30px;
-}
-
-.contact-form input,
-.contact-form textarea{
-    width:100%;
-    padding:14px;
-    margin-bottom:15px;
-    border:1px solid #ccc;
-    border-radius:5px;
-}
-
-.contact-form button{
-    background:#d4af37;
-    color:black;
-    border:none;
-    padding:14px 30px;
-    cursor:pointer;
-    border-radius:5px;
-    font-weight:bold;
-    transition:.3s;
-}
-
-footer{
-    background:#111;
-    color:white;
-    text-align:center;
-    padding:25px;
-}
-
-.floating-buttons{
-    position:fixed;
-    bottom:15px;
-    right:15px;
-    display:flex;
-    flex-direction:column;
-    gap:10px;
-    z-index:999;
-}
-
-.float-btn{
-    text-decoration:none;
-    color:white;
-    padding:14px 18px;
-    border-radius:50px;
-    font-weight:bold;
-    text-align:center;
-    box-shadow:0 3px 10px rgba(0,0,0,.25);
-    transition:.3s;
-}
-
-.float-call{
-    background:#d4af37;
-    color:black;
-}
-
-.float-wa{
-    background:#25D366;
-}
-
-.map-container{
-    max-width:1000px;
-    margin:auto;
-    border-radius:12px;
-    overflow:hidden;
-    box-shadow:0 2px 10px rgba(0,0,0,.1);
-}
-
-@media(max-width:768px){
-
-header{
-    height:auto;
-    min-height:100vh;
-    padding:60px 20px;
-}
-
-.hero{
-    width:100%;
-}
-
-.hero h1{
-    font-size:2.2rem;
-    line-height:1.2;
-}
-
-.hero p{
-    font-size:1rem;
-}
-
-.btn{
-    display:block;
-    width:100%;
-    margin:12px 0;
-}
-
-section{
-    padding:50px 20px;
-}
-
-.section-title{
-    font-size:1.7rem;
-}
-
-.service-grid{
-    grid-template-columns:1fr;
-}
-
-.contact-info{
-    font-size:1rem;
-}
-
-.contact-form input,
-.contact-form textarea,
-.contact-form button{
-    font-size:16px;
-}
-
-.floating-buttons{
-    right:10px;
-    bottom:10px;
-}
-
-.float-btn{
-    padding:12px 16px;
-    font-size:14px;
-}
-
-iframe{
-    height:300px;
-}
-
-}
-</style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhishek Bhavan | Premium Banquet Hall & Event Venue</title>
+    <meta name="description" content="Spacious and well-maintained banquet hall in Nadia, West Bengal for weddings, birthdays, and corporate events.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Tailwind CSS (via CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#D4AF37',   /* Elegant Gold */
+                        secondary: '#1a252f', /* Deep Navy/Charcoal */
+                        dark: '#111827',
+                        light: '#F9FAFB'
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        html { scroll-behavior: smooth; }
+        
+        /* Hero section with the specific image and a dark overlay for text readability */
+        .hero-section {
+            background-image: linear-gradient(rgba(17, 24, 39, 0.75), rgba(17, 24, 39, 0.85)), url('1000323223.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        
+        .service-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .service-card:hover .icon-container {
+            background-color: #D4AF37;
+            color: #fff;
+        }
+    </style>
 </head>
-<body>
+<body class="font-sans text-gray-700 bg-light antialiased">
 
-<header>
-    <div class="hero">
-        <h1>Abhishek Bhavan</h1>
-        <p>Your Perfect Venue for Weddings, Receptions, Birthdays, Anniversaries & Special Events</p>
+    <!-- Navigation -->
+    <nav class="bg-secondary text-white sticky top-0 z-50 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#" class="font-serif text-2xl md:text-3xl font-bold tracking-wider text-primary">
+                        ABHISHEK BHAVAN
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#about" class="text-gray-200 hover:text-primary transition duration-300 uppercase text-sm tracking-wide font-medium">About</a>
+                    <a href="#services" class="text-gray-200 hover:text-primary transition duration-300 uppercase text-sm tracking-wide font-medium">Services</a>
+                    <a href="#gallery" class="text-gray-200 hover:text-primary transition duration-300 uppercase text-sm tracking-wide font-medium">Gallery</a>
+                    <a href="#contact" class="text-gray-200 hover:text-primary transition duration-300 uppercase text-sm tracking-wide font-medium">Contact</a>
+                    <a href="https://wa.me/919475450254" target="_blank" class="bg-primary text-secondary px-6 py-2 rounded-full font-semibold hover:bg-yellow-500 transition duration-300 flex items-center gap-2">
+                        <i class="fab fa-whatsapp text-lg"></i> Book Now
+                    </a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-200 hover:text-white focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-secondary border-t border-gray-700 pb-4">
+            <a href="#about" class="block px-4 py-3 text-gray-200 hover:bg-gray-800 hover:text-primary">About</a>
+            <a href="#services" class="block px-4 py-3 text-gray-200 hover:bg-gray-800 hover:text-primary">Services</a>
+            <a href="#gallery" class="block px-4 py-3 text-gray-200 hover:bg-gray-800 hover:text-primary">Gallery</a>
+            <a href="#contact" class="block px-4 py-3 text-gray-200 hover:bg-gray-800 hover:text-primary">Contact</a>
+            <a href="https://wa.me/919475450254" target="_blank" class="block px-4 py-3 text-primary font-bold">
+                <i class="fab fa-whatsapp mr-2"></i> WhatsApp Us
+            </a>
+        </div>
+    </nav>
 
-```
-    <a href="tel:9475450254" class="btn call-btn">Call Now</a>
-    <a href="https://wa.me/917384523749" class="btn whatsapp-btn">WhatsApp Booking</a>
-</div>
-```
+    <!-- Hero Section -->
+    <header class="hero-section h-[85vh] flex items-center relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 w-full">
+            <span class="text-primary font-serif italic text-xl md:text-2xl mb-4 block">Welcome to</span>
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold font-serif text-white mb-6 leading-tight">
+                Make Your Event <br> <span class="text-primary">Truly Memorable</span>
+            </h1>
+            <p class="mt-4 text-lg md:text-xl text-gray-200 max-w-2xl mx-auto font-light mb-10">
+                A premier banquet hall and event venue offering comfort, elegance, and seamless service for your grandest celebrations.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="tel:+917384523749" class="bg-primary text-secondary px-8 py-3 rounded-full font-semibold hover:bg-yellow-500 transition duration-300 flex items-center justify-center gap-2">
+                    <i class="fas fa-phone-alt"></i> Call Us
+                </a>
+                <a href="#gallery" class="bg-transparent border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-secondary transition duration-300 flex items-center justify-center gap-2">
+                    <i class="fas fa-images text-lg"></i> View Gallery
+                </a>
+            </div>
+        </div>
+    </header>
 
-</header>
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-secondary mb-4">About Abhishek Bhavan</h2>
+                <div class="h-1 w-20 bg-primary mx-auto"></div>
+            </div>
+            <div class="max-w-3xl mx-auto text-center">
+                <p class="text-lg text-gray-600 leading-relaxed mb-6">
+                    Whether you're planning an intimate family gathering or a grand celebration, <strong>Abhishek Bhavan</strong> offers a spacious and well-maintained venue designed to make your event extraordinary.
+                </p>
+                <p class="text-lg text-gray-600 leading-relaxed">
+                    Located in the heart of Parbatipur, Nadia, our commitment to comfort, convenience, and quality service ensures a seamless experience for you and your guests. We provide the perfect canvas to bring your vision to life.
+                </p>
+            </div>
+        </div>
+    </section>
 
-<section class="about">
-    <h2 class="section-title">Welcome to Abhishek Bhavan</h2>
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-secondary mb-4">Our Services</h2>
+                <div class="h-1 w-20 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-500 max-w-2xl mx-auto">We accommodate a wide variety of events with flexible options to suit your specific needs and budget.</p>
+            </div>
 
-```
-<p style="max-width:900px;margin:auto;text-align:center;">
-    Abhishek Bhavan offers a comfortable and spacious venue for all types
-    of celebrations. Whether it is a wedding ceremony, reception, birthday
-    party, anniversary or family gathering, our excellent facilities and
-    flexible event arrangements help make every occasion memorable.
-</p>
-```
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service Cards -->
+                <div class="service-card bg-white p-8 rounded-lg border border-gray-100 text-center">
+                    <div class="icon-container w-16 h-16 mx-auto bg-gray-50 text-primary rounded-full flex items-center justify-center text-2xl mb-6 transition duration-300">
+                        <i class="fas fa-ring"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold text-secondary mb-3">Wedding Ceremonies</h3>
+                    <p class="text-gray-600 text-sm">A beautiful, spacious venue perfectly suited for both traditional and modern wedding celebrations.</p>
+                </div>
 
-</section>
+                <div class="service-card bg-white p-8 rounded-lg border border-gray-100 text-center">
+                    <div class="icon-container w-16 h-16 mx-auto bg-gray-50 text-primary rounded-full flex items-center justify-center text-2xl mb-6 transition duration-300">
+                        <i class="fas fa-birthday-cake"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold text-secondary mb-3">Birthday Parties</h3>
+                    <p class="text-gray-600 text-sm">Excellent hall facilities providing ample room for birthdays, milestones, and lively family functions.</p>
+                </div>
 
-<section class="services">
-    <h2 class="section-title">Our Services</h2>
+                <div class="service-card bg-white p-8 rounded-lg border border-gray-100 text-center">
+                    <div class="icon-container w-16 h-16 mx-auto bg-gray-50 text-primary rounded-full flex items-center justify-center text-2xl mb-6 transition duration-300">
+                        <i class="fas fa-glass-cheers"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold text-secondary mb-3">Engagement & Reception</h3>
+                    <p class="text-gray-600 text-sm">Ideal arrangements and elegant ambiance for engagements, receptions, and anniversary parties.</p>
+                </div>
 
-```
-<div class="service-grid">
+                <div class="service-card bg-white p-8 rounded-lg border border-gray-100 text-center">
+                    <div class="icon-container w-16 h-16 mx-auto bg-gray-50 text-primary rounded-full flex items-center justify-center text-2xl mb-6 transition duration-300">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold text-secondary mb-3">Corporate Gatherings</h3>
+                    <p class="text-gray-600 text-sm">Professional and accommodating space suitable for meetings, seminars, and community events.</p>
+                </div>
 
-    <div class="card">
-        <h3>Wedding Ceremonies</h3>
-        <p>Elegant venue arrangements for traditional and modern weddings.</p>
-    </div>
+                <div class="service-card bg-white p-8 rounded-lg border border-gray-100 text-center">
+                    <div class="icon-container w-16 h-16 mx-auto bg-gray-50 text-primary rounded-full flex items-center justify-center text-2xl mb-6 transition duration-300">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold text-secondary mb-3">Open Catering</h3>
+                    <p class="text-gray-600 text-sm">Total freedom to bring in and choose your own preferred catering provider for your guests.</p>
+                </div>
 
-    <div class="card">
-        <h3>Reception Events</h3>
-        <p>Comfortable and spacious facilities for memorable receptions.</p>
-    </div>
+                <div class="service-card bg-white p-8 rounded-lg border border-gray-100 text-center">
+                    <div class="icon-container w-16 h-16 mx-auto bg-gray-50 text-primary rounded-full flex items-center justify-center text-2xl mb-6 transition duration-300">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold text-secondary mb-3">Open Decoration</h3>
+                    <p class="text-gray-600 text-sm">Customize your event décor exactly according to your personal style, theme, and budget.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="card">
-        <h3>Birthday Parties</h3>
-        <p>Perfect venue for birthdays, family gatherings and celebrations.</p>
-    </div>
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-secondary mb-4">Event Gallery</h2>
+                <div class="h-1 w-20 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-500 max-w-2xl mx-auto">Take a glimpse into the beautiful events, stunning decorations, and grand celebrations hosted at Abhishek Bhavan.</p>
+            </div>
 
-    <div class="card">
-        <h3>Anniversary Functions</h3>
-        <p>Celebrate life's special milestones in a welcoming environment.</p>
-    </div>
+            <!-- Image Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+                
+                <!-- Gallery Images -->
+                <div class="group relative overflow-hidden rounded-lg shadow-md aspect-w-4 aspect-h-3">
+                    <img src="1000323223.jpg" alt="Abhishek Bhavan Exterior Lighting" class="object-cover w-full h-64 transform transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition duration-300 flex items-center justify-center"></div>
+                </div>
 
-    <div class="card">
-        <h3>Open Catering Services</h3>
-        <p>Choose your preferred catering provider without restrictions.</p>
-    </div>
+                <div class="group relative overflow-hidden rounded-lg shadow-md aspect-w-4 aspect-h-3">
+                    <img src="1000323295.jpg" alt="Entrance Setup" class="object-cover w-full h-64 transform transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition duration-300 flex items-center justify-center"></div>
+                </div>
 
-    <div class="card">
-        <h3>Open Decoration Services</h3>
-        <p>Customize decorations according to your style and preferences.</p>
-    </div>
+                <div class="group relative overflow-hidden rounded-lg shadow-md aspect-w-4 aspect-h-3">
+                    <img src="1000323220.jpg" alt="Event Decoration" class="object-cover w-full h-64 transform transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition duration-300 flex items-center justify-center"></div>
+                </div>
 
-</div>
-```
+                <div class="group relative overflow-hidden rounded-lg shadow-md aspect-w-4 aspect-h-3">
+                    <img src="1000323298.jpg" alt="Stage Design" class="object-cover w-full h-64 transform transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition duration-300 flex items-center justify-center"></div>
+                </div>
 
-</section>
+                <div class="group relative overflow-hidden rounded-lg shadow-md aspect-w-4 aspect-h-3">
+                    <img src="1000323253.jpg" alt="Traditional Setup" class="object-cover w-full h-64 transform transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition duration-300 flex items-center justify-center"></div>
+                </div>
 
-<section class="features">
-    <h2 class="section-title">Why Choose Us?</h2>
+                <div class="group relative overflow-hidden rounded-lg shadow-md aspect-w-4 aspect-h-3">
+                    <img src="1000323313.jpg" alt="Floral Decoration" class="object-cover w-full h-64 transform transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition duration-300 flex items-center justify-center"></div>
+                </div>
 
-```
-<ul>
-    <li>✔ Comfortable accommodation facilities available</li>
-    <li>✔ Spacious venue for various occasions</li>
-    <li>✔ Open catering and decoration services</li>
-    <li>✔ Quality infrastructure and facilities</li>
-    <li>✔ Suitable for weddings, receptions and private events</li>
-    <li>✔ Delicious food arrangements available</li>
-    <li>✔ Convenient location and easy accessibility</li>
-</ul>
-```
+                <div class="group relative overflow-hidden rounded-lg shadow-md aspect-w-4 aspect-h-3">
+                    <img src="1000323304.jpg" alt="Hall Interior" class="object-cover w-full h-64 transform transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition duration-300 flex items-center justify-center"></div>
+                </div>
 
-</section>
+                <div class="group relative overflow-hidden rounded-lg shadow-md aspect-w-4 aspect-h-3">
+                    <img src="1000323310.jpg" alt="Beautiful Setup" class="object-cover w-full h-64 transform transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition duration-300 flex items-center justify-center"></div>
+                </div>
 
-<section class="contact">
-    <h2 class="section-title">Contact Us</h2>
+                <div class="group relative overflow-hidden rounded-lg shadow-md aspect-w-4 aspect-h-3 sm:col-span-2 lg:col-span-1 xl:col-span-2">
+                    <img src="1000323307.jpg" alt="Interior Drapery" class="object-cover w-full h-64 transform transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition duration-300 flex items-center justify-center"></div>
+                </div>
 
-```
-<div class="contact-box">
+                <div class="group relative overflow-hidden rounded-lg shadow-md aspect-w-4 aspect-h-3 sm:col-span-2 lg:col-span-2 xl:col-span-2">
+                    <img src="1000323241.jpg" alt="Exterior Theme" class="object-cover w-full h-64 transform transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition duration-300 flex items-center justify-center"></div>
+                </div>
 
-    <div class="contact-info">
-        <strong>Phone:</strong> 9475450254<br><br>
+            </div>
+        </div>
+    </section>
 
-        <strong>WhatsApp:</strong> 7384523749<br><br>
+    <!-- Contact & Location Section -->
+    <section id="contact" class="py-20 bg-secondary text-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                
+                <!-- Contact Info -->
+                <div>
+                    <span class="text-primary font-semibold tracking-wider uppercase text-sm mb-2 block">Reach Out</span>
+                    <h2 class="text-3xl md:text-4xl font-serif font-bold mb-8">Contact & Location</h2>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center text-primary flex-shrink-0">
+                                <i class="fas fa-map-marker-alt text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-white">Our Address</h4>
+                                <p class="text-gray-400 mt-1">Vill- Parbatipur, P.O.- Pritinagar,<br>Dist- Nadia, PIN- 741247,<br>State- West Bengal, India.</p>
+                            </div>
+                        </div>
 
-        <strong>Business Hours:</strong><br>
-        Everyday: 8:00 AM – 9:00 PM<br><br>
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center text-primary flex-shrink-0">
+                                <i class="fas fa-phone-alt text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-white">Phone & WhatsApp</h4>
+                                <p class="text-gray-400 mt-1">
+                                    <a href="tel:+917384523749" class="hover:text-primary transition">+91 7384523749</a> <br>
+                                    <a href="https://wa.me/919475450254" target="_blank" class="hover:text-primary transition">+91 9475450254 (WhatsApp)</a>
+                                </p>
+                            </div>
+                        </div>
 
-        <strong>Address:</strong><br>
-        VILL, DIST, P.O. Pritinagar,<br>
-        Parbatipur, West Bengal - 741247
-    </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center text-primary flex-shrink-0">
+                                <i class="fas fa-clock text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-white">Opening Hours</h4>
+                                <p class="text-gray-400 mt-1">Open Daily<br>8:00 AM – 9:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-    <form class="contact-form">
-        <input type="text" placeholder="Your Name">
-        <input type="tel" placeholder="Phone Number">
-        <input type="text" placeholder="Event Type">
-        <textarea rows="5" placeholder="Tell us about your event"></textarea>
-        <button type="submit">Send Enquiry</button>
-    </form>
+                <!-- CTA -->
+                <div class="bg-white rounded-lg p-8 text-center lg:text-left shadow-2xl">
+                    <h3 class="text-2xl font-serif font-bold text-secondary mb-4">Ready to book your event?</h3>
+                    <p class="text-gray-600 mb-8">Contact us directly on WhatsApp to check availability, discuss pricing, or schedule a venue tour.</p>
+                    <a href="https://wa.me/919475450254" target="_blank" class="w-full block text-center bg-[#25D366] text-white py-4 rounded-lg font-bold text-lg hover:bg-[#128C7E] transition duration-300 shadow-lg">
+                        <i class="fab fa-whatsapp text-2xl align-middle mr-2"></i> Message on WhatsApp
+                    </a>
+                    <p class="text-gray-400 text-sm mt-4 text-center">Usually replies within a few hours.</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
 
-</div>
-```
+    <!-- Footer -->
+    <footer class="bg-dark text-gray-400 py-8 border-t border-gray-800 text-center">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-2xl font-serif font-bold text-white mb-2">Abhishek Bhavan</h2>
+            <p class="mb-4">Making Your Events Memorable in Nadia.</p>
+            <p class="text-sm">
+                &copy; <script>document.write(new Date().getFullYear())</script> Abhishek Bhavan. All rights reserved.
+            </p>
+        </div>
+    </footer>
 
-</section>
+    <!-- Mobile Menu Script -->
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
 
-<section class="map-section">
-    <h2 class="section-title">Find Us</h2>
-
-```
-<div class="map-container">
-
-    <iframe
-        src="https://www.google.com/maps?q=Pritinagar,%20West%20Bengal%20741247&output=embed"
-        width="100%"
-        height="450"
-        style="border:0;"
-        allowfullscreen=""
-        loading="lazy">
-    </iframe>
-
-</div>
-```
-
-</section>
-
-<footer>
-    <h3>Abhishek Bhavan</h3>
-    <p>Banquet Hall & Event Venue</p>
-    <p>📞 9475450254 | WhatsApp: 7384523749</p>
-    <p>Open Daily: 8:00 AM - 9:00 PM</p>
-</footer>
-
-<div class="floating-buttons">
-    <a href="tel:9475450254" class="float-btn float-call">📞 Call</a>
-    <a href="https://wa.me/917384523749" class="float-btn float-wa">WhatsApp</a>
-</div>
-
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html>
